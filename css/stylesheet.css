@@ -206,7 +206,7 @@ i {
   color: #fff;
   text-shadow: 3px 3px 3px black;
   position: relative;
-  font-size: 1.5em;
+  font-size: 1.1rem;
   background-color: transparent;
   text-align: left;
 }
@@ -258,15 +258,58 @@ i {
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
-@media (min-width: 40em) {
-  .content-heading {
-    font-size: 50px;
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 575.98px) {
+  .navbar-brand {
+    width: 50%;
+  }
+
+  .navbar-brand img {
+    max-width: 100%;
+    height: auto;
   }
 }
 
-@media (min-width: 62em) {
-  .content-heading {
-    margin-top: 7rem;
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 991.98px) {
+  .tile h2 {
+    font-size: 1rem;
+  }
+
+  .img-profile {
+    /*max-width: 50%;*/
+  }
+  .focus-tile {
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      z-index: 1050;
+  }
+
+  .focus-tile .infos-list {
+    padding-bottom: 30px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1539.98px) {
+  .focus-tile {
+      height: 85%;
+      width: 95%;
+      top: 6.5%;
+      z-index: 1050;
+  }
+
+    .focus-tile .infos-list {
+    padding-bottom: 30px;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1540px) {
+  .focus-tile {
+      height: 75%;
+      width: 95%;
   }
 }
 
