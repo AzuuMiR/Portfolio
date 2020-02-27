@@ -72,6 +72,32 @@ function closeCircles() {
 
 // CONCEPTS
 
+// ASCEND ME
+function openAscend() {
+    document.getElementById("ascend").style.visibility = "visible";
+    document.getElementById("ascend").style.opacity = "1";
+    document.getElementById("ascend").style.transitionDelay = "0s";
+}
+
+function closeAscend() {
+    document.getElementById("ascend").style.visibility = "hidden";
+    document.getElementById("ascend").style.opacity = "0";
+    document.getElementById("ascend").style.transition = "visibility 0s ease-in-out 0.5s, opacity 0.5s ease-in-out";
+}
+
+// BRIGHT LIGHTS DRIVE
+function openBLD() {
+    document.getElementById("bld").style.visibility = "visible";
+    document.getElementById("bld").style.opacity = "1";
+    document.getElementById("bld").style.transitionDelay = "0s";
+}
+
+function closeBLD() {
+    document.getElementById("bld").style.visibility = "hidden";
+    document.getElementById("bld").style.opacity = "0";
+    document.getElementById("bld").style.transition = "visibility 0s ease-in-out 0.5s, opacity 0.5s ease-in-out";
+}
+
 // GW2 UI
 function openGW2UI() {
 	document.getElementById("gw2ui").style.visibility = "visible";

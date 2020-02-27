@@ -57,6 +57,10 @@ hr {
   background-image: -o-linear-gradient(left, transparent, #B72828, transparent);
 }
 
+iframe {
+  height: 315px;
+}
+
 /* NAVBAR
 ------------------------- */
 
@@ -175,6 +179,20 @@ hr {
   padding: 5px;
 }
 
+.popover {
+  border-color: #B72828;
+  border-radius: 0;
+  background-color: rgba(0, 0, 0, 0.95);
+}
+
+.popover .popover-body {
+  color: #DDD;
+}
+
+.bs-popover-top .arrow {
+  display: none;
+}
+
 .nav-pills {
   margin-bottom: 15px;
 }
@@ -254,6 +272,11 @@ i {
       padding: 5px;
   }
 
+  .bld-img img {
+    max-height: 350px;
+    width: auto;
+  }
+
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
@@ -290,6 +313,22 @@ i {
   .focus-tile .infos-list {
     padding-bottom: 30px;
   }
+
+  .carousel-item img {
+    max-height: 500px;
+    width: auto;
+    padding-bottom: 20px;
+  }
+
+  .carousel-caption {
+    position: relative;
+    left: 0;
+    right: 0;
+  }
+
+  iframe {
+    height: 500px;
+  }
 }
 
 @media (min-width: 992px) and (max-width: 1539.98px) {
@@ -298,6 +337,11 @@ i {
       width: 95%;
       top: 6.5%;
       z-index: 1050;
+  }
+    .carousel-item img {
+      max-height: 500px;
+      width: auto;
+      padding-bottom: 20px;
   }
 
     .focus-tile .infos-list {
