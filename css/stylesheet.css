@@ -61,6 +61,10 @@ iframe {
   height: 315px;
 }
 
+li {
+  list-style-position: inside;
+}
+
 /* NAVBAR
 ------------------------- */
 
@@ -112,11 +116,11 @@ iframe {
   font-weight: 300;
   letter-spacing: 1px;
   text-transform: uppercase;
-  background-color: rgba(0,0,0, 0.25);
+  background-color: rgba(0,0,0, 0.5);
 }
 
 .dropdown-item:hover {
-  background-color: rgba(0,0,0, 0.25);
+  background-color: rgba(0,0,0, 0.5);
 }
 
 .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
@@ -151,7 +155,7 @@ iframe {
   list-style-type: none;
 }
 
-.infos-list ul {
+.infos-list ul, .profile-tab ul {
   list-style-type: square;
 }
 
@@ -277,11 +281,9 @@ i {
       padding: 5px;
   }
 
-  .bld-img img {
-    max-height: 350px;
-    width: auto;
-  }
-
+.dl-link {
+  font-size: 1.5em;
+}
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
